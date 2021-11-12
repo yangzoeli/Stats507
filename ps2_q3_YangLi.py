@@ -37,7 +37,11 @@ demo1718["COHORT"] = '2017_18'
 demo11_18 = pd.concat([demo1112, demo1314, demo1516, demo1718], axis=0)
 
 # To get certain columns ------------------------
+<<<<<<< HEAD
 column_u1 = ["COHORT","SEQN", "RIDAGEYR", "RIDRETH3", "DMDEDUC2", "DMDMARTL",           "RIDSTATR", "SDMVPSU", "SDMVSTRA", "WTMEC2YR", "WTINT2YR"]
+=======
+column_u1 = ["COHORT","SEQN", "RIAGENDR", "RIDAGEYR", "RIDRETH3", "DMDEDUC2", "DMDMARTL",           "RIDSTATR", "SDMVPSU", "SDMVSTRA", "WTMEC2YR", "WTINT2YR"]
+>>>>>>> ps4
 #column_d1 =[x.lower() for x in column_u1 if isinstance(x,str)]
 demo = demo11_18[column_u1]
 
