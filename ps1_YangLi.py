@@ -8,7 +8,8 @@
 # This is *question 0* for [<font color = red>problem set 1</font>](https://jbhender.github.io/Stats507/F21/ps/ps1.html) of [<font color = red>Stats 507</font>](https://jbhender.github.io/Stats507/F21/syllabus.html).
 # > ## Question 0 - Markdown warmup
 # 
-# The next question is about the **Fibonnaci sequence**, F<sub>n</sub>=F<sub>n-2</sub>+F<sub>n-1</sub>.
+# The next question is about the **Fibonnaci sequence**, 
+# F<sub>n</sub>=F<sub>n-2</sub>+F<sub>n-1</sub>. 
 # In part **a** we will define a Python function `fib_rec()`.
 # 
 # Below is a …
@@ -26,6 +27,34 @@
 #     a.Item 1  
 #     b.Item 2  
 #     c.Item 3  
+#     
+#     
+#  
+# **Raw version**
+# ```
+# ---
+# The next question is about the **Fibonnaci sequence**, 
+# F<sub>n</sub>=F<sub>n-2</sub>+F<sub>n-1</sub>. 
+# In part **a** we will define a Python function `fib_rec()`.
+# 
+# Below is a …
+# 
+# ## Level 3 Header
+# Next, we can make a bulleted list:
+# 
+# - Item 1
+#    - detail 1
+#    - detail 2
+# - Item 2
+# 
+# Finally, we can make an enumerated list:
+# 
+#     a.Item 1  
+#     b.Item 2  
+#     c.Item 3  
+# ---
+# ```
+# 
 
 # # Answer to Question 1 - Fibonnaci Sequence
 
@@ -38,6 +67,8 @@
 #that takes input n
 
 def fib_rec(n): 
+    '''
+    
     fib0 = 0
     fib1 = 1
     if n == 0: 
@@ -146,8 +177,7 @@ if __name__ == '__main__':
 
 # In[6]:
 
-# modules: --------------------------------------------------------------------
-import numpy as np
+
 import numpy as np
 import time
 import prettytable as pt
@@ -374,7 +404,6 @@ def formatstring(point_prec=2, int_prec=4):
     return "%(est).{:d}f[%(level).0f%%CI:(%(lwr).{:d}f, %(upr).{:d}f)]".format(
         point_prec, int_prec, int_prec
     )
-
 
 
 def which_method(n):
